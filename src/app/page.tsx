@@ -246,7 +246,7 @@ export default function EstateDashboard() {
 
           <div className="col-span-12 lg:col-span-4 space-y-6">
             <Card>
-              <CardHeader className="flex flex-row items-center justify-between px-5 py-4">
+              <CardHeader className="flex flex-row items-center justify-between px-5 py-3">
                 <div className="flex items-center gap-3">
                   <svg
                     width="28"
@@ -287,30 +287,68 @@ export default function EstateDashboard() {
               </CardHeader>
               <div className="h-px w-full bg-border" />
               <CardContent className="grid grid-cols-3 divide-x px-0 py-0">
-                <div className="space-y-2 px-6 py-6">
+                <div className="space-y-1.5 px-6 py-4">
                   <p className="text-sm font-medium text-muted-foreground">Total</p>
-                  <p className="text-4xl font-semibold tracking-tight">1.8k</p>
+                  <p className="text-3xl font-semibold tracking-tight">1.8k</p>
                 </div>
-                <div className="space-y-2 px-6 py-6">
+                <div className="space-y-1.5 px-6 py-4">
                   <p className="text-sm font-medium text-muted-foreground">Active</p>
-                  <p className="text-4xl font-semibold tracking-tight">80</p>
+                  <p className="text-3xl font-semibold tracking-tight">80</p>
                 </div>
-                <div className="space-y-2 px-6 py-6">
+                <div className="space-y-1.5 px-6 py-4">
                   <p className="text-sm font-medium text-muted-foreground">Archived</p>
-                  <p className="text-4xl font-semibold tracking-tight">1k</p>
+                  <p className="text-3xl font-semibold tracking-tight">1k</p>
                 </div>
               </CardContent>
             </Card>
 
             <Card>
-              <CardHeader className="flex flex-row items-center justify-between">
-                <CardTitle>Users Overview</CardTitle>
-                <Button variant="link">View all</Button>
+              <CardHeader className="flex flex-row items-center justify-between px-5 py-3">
+                <div className="flex items-center gap-3">
+                  <svg
+                    width="28"
+                    height="28"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                    className="text-blue-600"
+                    aria-hidden="true"
+                  >
+                    <path
+                      d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"
+                      stroke="currentColor"
+                      strokeWidth="2"
+                      strokeLinecap="round"
+                      strokeLinejoin="round"
+                    />
+                    <path
+                      d="M12 11a4 4 0 1 0 0-8 4 4 0 0 0 0 8Z"
+                      stroke="currentColor"
+                      strokeWidth="2"
+                      strokeLinecap="round"
+                      strokeLinejoin="round"
+                    />
+                  </svg>
+                  <CardTitle className="text-lg">Users Overview</CardTitle>
+                </div>
+                <Button variant="link" className="h-auto px-0 text-blue-600">
+                  View all
+                </Button>
               </CardHeader>
-              <CardContent className="grid grid-cols-3 gap-4 text-center">
-                <div><p className="text-muted-foreground">Total</p><p className="text-2xl font-semibold">20.7k</p></div>
-                <div><p className="text-muted-foreground">Riders</p><p className="text-2xl font-semibold">8.5k</p></div>
-                <div><p className="text-muted-foreground">Subscribers</p><p className="text-2xl font-semibold">7.5k</p></div>
+              <div className="h-px w-full bg-border" />
+              <CardContent className="grid grid-cols-3 divide-x px-0 py-0">
+                <div className="space-y-1.5 px-6 py-4">
+                  <p className="text-sm font-medium text-muted-foreground">Total</p>
+                  <p className="text-3xl font-semibold tracking-tight">20.7k</p>
+                </div>
+                <div className="space-y-1.5 px-6 py-4">
+                  <p className="text-sm font-medium text-muted-foreground">Riders</p>
+                  <p className="text-3xl font-semibold tracking-tight">8.5k</p>
+                </div>
+                <div className="space-y-1.5 px-6 py-4">
+                  <p className="text-sm font-medium text-muted-foreground">Subscribers</p>
+                  <p className="text-3xl font-semibold tracking-tight">7.5k</p>
+                </div>
               </CardContent>
             </Card>
           </div>
