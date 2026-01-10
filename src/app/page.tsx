@@ -246,14 +246,59 @@ export default function EstateDashboard() {
 
           <div className="col-span-12 lg:col-span-4 space-y-6">
             <Card>
-              <CardHeader className="flex flex-row items-center justify-between">
-                <CardTitle>Listings Overview</CardTitle>
-                <Button variant="link">View all</Button>
+              <CardHeader className="flex flex-row items-center justify-between px-5 py-4">
+                <div className="flex items-center gap-3">
+                  <svg
+                    width="28"
+                    height="28"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                    className="text-blue-600"
+                    aria-hidden="true"
+                  >
+                    <path
+                      d="M3 10.5L12 3l9 7.5"
+                      stroke="currentColor"
+                      strokeWidth="2"
+                      strokeLinecap="round"
+                      strokeLinejoin="round"
+                    />
+                    <path
+                      d="M5 9.5V21h14V9.5"
+                      stroke="currentColor"
+                      strokeWidth="2"
+                      strokeLinecap="round"
+                      strokeLinejoin="round"
+                    />
+                    <path
+                      d="M9 21v-7a3 3 0 0 1 6 0v7"
+                      stroke="currentColor"
+                      strokeWidth="2"
+                      strokeLinecap="round"
+                      strokeLinejoin="round"
+                    />
+                  </svg>
+                  <CardTitle className="text-lg">Listings Overview</CardTitle>
+                </div>
+                <Button variant="link" className="h-auto px-0 text-blue-600">
+                  View all
+                </Button>
               </CardHeader>
-              <CardContent className="grid grid-cols-3 gap-4 text-center">
-                <div><p className="text-muted-foreground">Total</p><p className="text-2xl font-semibold">1.8k</p></div>
-                <div><p className="text-muted-foreground">Active</p><p className="text-2xl font-semibold">80</p></div>
-                <div><p className="text-muted-foreground">Archived</p><p className="text-2xl font-semibold">1k</p></div>
+              <div className="h-px w-full bg-border" />
+              <CardContent className="grid grid-cols-3 divide-x px-0 py-0">
+                <div className="space-y-2 px-6 py-6">
+                  <p className="text-sm font-medium text-muted-foreground">Total</p>
+                  <p className="text-4xl font-semibold tracking-tight">1.8k</p>
+                </div>
+                <div className="space-y-2 px-6 py-6">
+                  <p className="text-sm font-medium text-muted-foreground">Active</p>
+                  <p className="text-4xl font-semibold tracking-tight">80</p>
+                </div>
+                <div className="space-y-2 px-6 py-6">
+                  <p className="text-sm font-medium text-muted-foreground">Archived</p>
+                  <p className="text-4xl font-semibold tracking-tight">1k</p>
+                </div>
               </CardContent>
             </Card>
 
