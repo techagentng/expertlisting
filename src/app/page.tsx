@@ -35,16 +35,16 @@ export default function EstateDashboard() {
       <Card className="w-full rounded-none border-0 shadow-none bg-[#0f5c49]">
         <nav className="flex items-center justify-between px-6 py-4">
           <div className="flex items-center gap-3">
-            <img src="/logo.png" alt="Logo" className="h-8 w-8 object-contain" />
+            <img src="/Group.png" alt="Logo" className="h-6 w-6 object-contain" />
             <span className="text-white text-xl font-semibold tracking-wide">Expert Listing</span>
           </div>
           <div className="flex items-center gap-5">
-            <img src="/icons/icon1.png" alt="icon" className="h-6 w-6" />
-            <img src="/icons/icon2.png" alt="icon" className="h-6 w-6" />
-            <img src="/icons/icon3.png" alt="icon" className="h-6 w-6" />
-            <img src="/icons/icon4.png" alt="icon" className="h-6 w-6" />
-            <img src="/icons/icon5.png" alt="icon" className="h-6 w-6" />
-            <img src="/icons/icon6.png" alt="icon" className="h-6 w-6 rounded-full" />
+            <img src="/Budgeting.png" alt="icon" className="h-6 w-6" />
+            <img src="/Calendar.png" alt="icon" className="h-6 w-6" />
+            <img src="/document-text.png" alt="icon" className="h-6 w-6" />
+            <img src="/Payout Center.png" alt="icon" className="h-6 w-6" />
+            <img src="/Marketplace.png" alt="icon" className="h-6 w-6" />
+            <img src="/Profile.png" alt="icon" className="h-6 w-6 rounded-full" />
           </div>
         </nav>
       </Card>
