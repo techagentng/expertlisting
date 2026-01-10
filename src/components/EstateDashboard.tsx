@@ -36,8 +36,8 @@ export default function EstateDashboard() {
       <TopNavbar onOpenBudget={() => setIsBudgetModalOpen(true)} />
       <MenuBar active="dashboard" />
 
-      <div className="mx-6 my-6 space-y-6 rounded-2xl bg-background p-6">
-        <h1 className="text-2xl font-semibold">Welcome, Ahmed</h1>
+      <div className="mx-4 my-4 space-y-6 rounded-2xl bg-background p-4 sm:mx-6 sm:my-6 sm:p-6">
+        <h1 className="text-xl font-semibold sm:text-2xl">Welcome, Ahmed</h1>
 
         <div className="grid grid-cols-12 gap-6">
           <SalesOverview salesData={salesData} />

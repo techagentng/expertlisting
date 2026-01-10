@@ -35,7 +35,11 @@ export default function PropertyCards({
         <Card key={c.badge} className="relative overflow-hidden rounded-2xl">
           <CardContent className="p-0">
             <div className="relative h-72">
-              <img src={c.imageSrc} alt="property" className="h-full w-full object-cover" />
+              <img
+                src={c.imageSrc}
+                alt="property"
+                className="h-full w-full scale-105 object-cover object-center"
+              />
               <div className="absolute inset-0 bg-black/20" />
               <div className="absolute bottom-10 left-4 space-y-1 text-white">
                 <p className="text-xs uppercase tracking-wide">{c.badge}</p>

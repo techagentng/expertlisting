@@ -31,12 +31,12 @@ export default function SalesOverview({ salesData }: SalesOverviewProps) {
 
   return (
     <Card className="col-span-12 lg:col-span-8">
-      <CardHeader className="flex flex-row items-center justify-between">
+      <CardHeader className="flex flex-col gap-4 sm:flex-row sm:items-center sm:justify-between">
         <div>
           <CardTitle>Sales Overview</CardTitle>
           <p className="text-sm text-muted-foreground">Showing overview Jan 2022 - Sep 2022</p>
         </div>
-        <Button variant="outline" className="rounded-full">
+        <Button variant="outline" className="w-full rounded-full sm:w-auto">
           View Transactions
         </Button>
       </CardHeader>
@@ -52,7 +52,7 @@ export default function SalesOverview({ salesData }: SalesOverviewProps) {
 
         <div className="grid gap-6 lg:grid-cols-[1fr_380px] xl:grid-cols-[1fr_420px]">
           <div className="relative">
-            <div className="absolute left-0 top-1/2 -translate-y-1/2">
+            <div className="absolute left-0 top-1/2 hidden -translate-y-1/2 sm:block">
               <button
                 type="button"
                 className="grid size-9 place-items-center rounded-full border bg-background text-muted-foreground shadow-sm"
@@ -61,7 +61,7 @@ export default function SalesOverview({ salesData }: SalesOverviewProps) {
                 ‹
               </button>
             </div>
-            <div className="absolute right-0 top-1/2 -translate-y-1/2">
+            <div className="absolute right-0 top-1/2 hidden -translate-y-1/2 sm:block">
               <button
                 type="button"
                 className="grid size-9 place-items-center rounded-full border bg-background text-muted-foreground shadow-sm"

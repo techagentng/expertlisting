@@ -7,12 +7,14 @@ type TopNavbarProps = {
 export default function TopNavbar({ onOpenBudget }: TopNavbarProps) {
   return (
     <Card className="w-full rounded-none border-0 shadow-none bg-[#0f5c49]">
-      <nav className="flex items-center justify-between px-6 py-4">
-        <div className="flex items-center gap-3">
+      <nav className="flex items-center justify-between gap-4 px-4 py-3 sm:px-6 sm:py-4">
+        <div className="flex min-w-0 items-center gap-3">
           <img src="/Group.png" alt="Logo" className="h-6 w-6 object-contain" />
-          <span className="text-white text-xl font-semibold tracking-wide">Expert Listing</span>
+          <span className="truncate text-lg font-semibold tracking-wide text-white sm:text-xl">
+            Expert Listing
+          </span>
         </div>
-        <div className="flex items-center gap-5">
+        <div className="flex max-w-[60%] items-center gap-3 overflow-x-auto whitespace-nowrap sm:max-w-none sm:gap-5">
           <button
             type="button"
             className="rounded-md"

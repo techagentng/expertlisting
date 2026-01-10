@@ -7,13 +7,15 @@ type MenuBarProps = {
 export default function MenuBar({ active = "dashboard" }: MenuBarProps) {
   return (
     <div className="bg-white border-b">
-      <div className="flex items-center gap-10 px-6 py-4">
+      <div className="flex items-center gap-3 overflow-x-auto px-4 py-3 sm:gap-6 sm:px-6 sm:py-4">
         <Button
           variant="ghost"
           className={
-            active === "dashboard"
-              ? "gap-2 rounded-xl bg-[#dceae6] text-[#0f5c49] hover:bg-[#dceae6]/80 hover:text-[#0f5c49]"
-              : "gap-2 rounded-xl"
+            `shrink-0 gap-2 rounded-xl ${
+              active === "dashboard"
+                ? "bg-[#dceae6] text-[#0f5c49] hover:bg-[#dceae6]/80 hover:text-[#0f5c49]"
+                : ""
+            }`
           }
         >
           <svg
@@ -50,7 +52,7 @@ export default function MenuBar({ active = "dashboard" }: MenuBarProps) {
           Dashboard
         </Button>
 
-        <Button variant="ghost" className="gap-2 rounded-xl">
+        <Button variant="ghost" className="shrink-0 gap-2 rounded-xl">
           <svg
             width="18"
             height="18"
@@ -69,7 +71,7 @@ export default function MenuBar({ active = "dashboard" }: MenuBarProps) {
           Listings
         </Button>
 
-        <Button variant="ghost" className="gap-2 rounded-xl">
+        <Button variant="ghost" className="shrink-0 gap-2 rounded-xl">
           <svg
             width="18"
             height="18"
@@ -96,7 +98,7 @@ export default function MenuBar({ active = "dashboard" }: MenuBarProps) {
           Users
         </Button>
 
-        <Button variant="ghost" className="gap-2 rounded-xl">
+        <Button variant="ghost" className="shrink-0 gap-2 rounded-xl">
           <svg
             width="18"
             height="18"
@@ -116,7 +118,7 @@ export default function MenuBar({ active = "dashboard" }: MenuBarProps) {
           Request
         </Button>
 
-        <Button variant="ghost" className="gap-2 rounded-xl">
+        <Button variant="ghost" className="shrink-0 gap-2 rounded-xl">
           <svg
             width="18"
             height="18"
@@ -141,7 +143,7 @@ export default function MenuBar({ active = "dashboard" }: MenuBarProps) {
           Applications
         </Button>
 
-        <Button variant="ghost" className="gap-2 rounded-xl">
+        <Button variant="ghost" className="shrink-0 gap-2 rounded-xl">
           <svg
             width="18"
             height="18"
