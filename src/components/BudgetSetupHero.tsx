@@ -1,3 +1,4 @@
+import Image from "next/image";
 import { Button } from "@/components/ui/button";
 import { BarChart3, LineChart, SlidersHorizontal } from "lucide-react";
 
@@ -5,10 +6,13 @@ export default function BudgetSetupHero() {
   return (
     <div className="overflow-hidden rounded-3xl bg-white">
       <div className="relative h-40">
-        <img
+        <Image
           src="/media.png"
           alt="Budgeting header"
-          className="absolute inset-0 h-full w-full object-cover"
+          fill
+          priority
+          className="object-cover"
+          sizes="(max-width: 768px) 100vw, 500px"
         />
         <div className="absolute inset-0 bg-black/30" />
         <div className="absolute inset-0 grid place-items-center">
