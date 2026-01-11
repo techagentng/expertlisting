@@ -12,7 +12,7 @@ export default function BudgetSetupHero() {
         />
         <div className="absolute inset-0 bg-black/30" />
         <div className="absolute inset-0 grid place-items-center">
-          <div className="grid size-18 place-items-center rounded-3xl border border-white/30 bg-white/5">
+          {/* <div className="grid size-18 place-items-center rounded-3xl border border-white/30 bg-white/5">
             <svg
               width="48"
               height="48"
@@ -46,7 +46,7 @@ export default function BudgetSetupHero() {
               <circle cx="32" cy="44" r="2.5" fill="white" />
               <circle cx="38" cy="44" r="2.5" fill="white" />
             </svg>
-          </div>
+          </div> */}
         </div>
       </div>
 
