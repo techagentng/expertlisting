@@ -32,13 +32,13 @@ export default function PropertyCards({
   return (
     <div className="grid grid-cols-1 gap-6 md:grid-cols-3">
       {cards.map((c) => (
-        <Card key={c.badge} className="relative overflow-hidden rounded-2xl">
+        <Card key={c.badge} className="relative overflow-hidden rounded-2xl p-0">
           <CardContent className="p-0">
-            <div className="relative h-72">
+            <div className="relative h-80">
               <img
                 src={c.imageSrc}
                 alt="property"
-                className="h-full w-full scale-105 object-cover object-center"
+                className="absolute inset-0 h-full w-full object-cover object-center"
               />
               <div className="absolute inset-0 bg-black/20" />
               <div className="absolute bottom-10 left-4 space-y-1 text-white">
