@@ -4,6 +4,7 @@ import { useState } from "react";
 
 import BudgetSetupHero from "@/components/BudgetSetupHero";
 import { Dialog, DialogContent } from "@/components/ui/dialog";
+import CalendarSheet from "@/components/dashboard/CalendarSheet";
 import MenuBar from "@/components/dashboard/MenuBar";
 import PropertyCards from "@/components/dashboard/PropertyCards";
 import SalesOverview from "@/components/dashboard/SalesOverview";
@@ -12,6 +13,7 @@ import TopNavbar from "@/components/dashboard/TopNavbar";
 
 export default function EstateDashboard() {
   const [isBudgetModalOpen, setIsBudgetModalOpen] = useState(false);
+  const [isCalendarOpen, setIsCalendarOpen] = useState(false);
 
   const salesData = [
     { month: "Jan", blue: 35, green: 28, red: 10 },
@@ -33,7 +35,12 @@ export default function EstateDashboard() {
         </DialogContent>
       </Dialog>
 
-      <TopNavbar onOpenBudget={() => setIsBudgetModalOpen(true)} />
+      <CalendarSheet open={isCalendarOpen} onOpenChange={setIsCalendarOpen} />
+
+      <TopNavbar
+        onOpenBudget={() => setIsBudgetModalOpen(true)}
+        onOpenCalendar={() => setIsCalendarOpen(true)}
+      />
       <MenuBar active="dashboard" />
 
       <div className="mx-4 my-4 space-y-6 rounded-2xl bg-background p-4 sm:mx-6 sm:my-6 sm:p-6">
