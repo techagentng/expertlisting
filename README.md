@@ -51,3 +51,24 @@ http://localhost:3000
 npm run build
 npm run start
 ```
+
+## Testing
+
+This project includes automated tests for the modal components using **Jest** and **React Testing Library**.
+
+### Run tests
+
+```bash
+npm test
+```
+
+### Watch mode
+
+```bash
+npm run test:watch
+```
+
+### What's tested
+
+- **Budget modal**: Opens when clicking the budgeting icon, closes correctly
+- **Calendar sheet**: Opens when clicking the calendar icon (slides in from the right), closes correctly
