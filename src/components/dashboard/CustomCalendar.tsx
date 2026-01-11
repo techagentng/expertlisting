@@ -114,7 +114,7 @@ export default function CustomCalendar({
                       type="button"
                       onClick={() => onSelect?.(date)}
                       className={cn(
-                        "flex h-full w-full items-center justify-center rounded-none px-2 text-xl font-bold transition-all md:text-2xl",
+                        "flex h-full w-full items-center justify-center rounded-none px-2 text-xs font-bold transition-all md:text-sm",
                         "hover:bg-white/10 active:scale-95 active:bg-white/20",
                         outside && "text-white/40",
                         !outside && "text-white",
