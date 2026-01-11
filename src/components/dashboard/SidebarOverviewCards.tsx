@@ -1,5 +1,6 @@
 import { Button } from "@/components/ui/button";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
+import { ChevronRight } from "lucide-react";
 
 export default function SidebarOverviewCards() {
   return (
@@ -40,8 +41,9 @@ export default function SidebarOverviewCards() {
             </svg>
             <CardTitle className="text-lg">Listings Overview</CardTitle>
           </div>
-          <Button variant="link" className="h-auto px-0 text-blue-600">
+          <Button variant="link" className="h-auto gap-1 px-0 text-blue-600">
             View all
+            <ChevronRight className="size-4" />
           </Button>
         </CardHeader>
         <div className="h-px w-full bg-border" />
@@ -90,8 +92,9 @@ export default function SidebarOverviewCards() {
             </svg>
             <CardTitle className="text-lg">Users Overview</CardTitle>
           </div>
-          <Button variant="link" className="h-auto px-0 text-blue-600">
+          <Button variant="link" className="h-auto gap-1 px-0 text-blue-600">
             View all
+            <ChevronRight className="size-4" />
           </Button>
         </CardHeader>
         <div className="h-px w-full bg-border" />

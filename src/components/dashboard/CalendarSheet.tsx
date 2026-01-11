@@ -9,7 +9,7 @@ import {
   SheetHeader,
   SheetTitle,
 } from "@/components/ui/sheet";
-import { ChevronLeft, X } from "lucide-react";
+import { X } from "lucide-react";
 import { cn } from "@/lib/utils";
 import CustomCalendar from "@/components/dashboard/CustomCalendar";
 
@@ -47,22 +47,14 @@ export default function CalendarSheet({
         className={cn(
           "h-full w-[92vw] max-w-[420px] sm:max-w-[460px]",
           "gap-0 border-l border-white/8 bg-gradient-to-b from-zinc-950 to-black p-0",
-          "text-white backdrop-blur-xl"
+          "text-white backdrop-blur-xl",
+          "[&_[data-slot=sheet-close]]:hidden"
         )}
       >
         {/* Header */}
         <SheetHeader className="relative shrink-0 border-b border-white/7 bg-black/40 px-5 py-4 backdrop-blur-sm">
           <div className="flex items-center justify-between">
             <div className="flex items-center gap-3">
-              <SheetClose asChild>
-                <button
-                  className="rounded-full p-2 text-white/70 transition-colors hover:bg-white/10 active:bg-white/15"
-                  aria-label="Go back"
-                >
-                  <ChevronLeft size={24} strokeWidth={2.2} />
-                </button>
-              </SheetClose>
-
               <SheetTitle className="text-2xl font-semibold text-white">
                 Calendar
               </SheetTitle>
