@@ -13,7 +13,7 @@ type PropertyCardsProps = {
 export default function PropertyCards({
   cards = [
     {
-      imageSrc: "/House1.jpg",
+      imageSrc: "/House1.png",
       badge: "Most Clicked",
       title: "Urban Prime Plaza Premiere",
     },
