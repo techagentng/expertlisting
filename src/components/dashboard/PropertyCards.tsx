@@ -1,4 +1,5 @@
 import { Card, CardContent } from "@/components/ui/card";
+import { MessageSquare } from "lucide-react";
 
 type PropertyCard = {
   imageSrc: string;
@@ -31,8 +32,8 @@ export default function PropertyCards({
 }: PropertyCardsProps) {
   return (
     <div className="grid grid-cols-1 gap-6 md:grid-cols-3">
-      {cards.map((c) => (
-        <Card key={c.badge} className="relative overflow-hidden rounded-2xl p-0">
+      {cards.map((c, index) => (
+        <Card key={c.badge} className="relative overflow-visible rounded-2xl p-0">
           <CardContent className="p-0">
             <div className="relative h-80">
               <img
@@ -52,6 +53,17 @@ export default function PropertyCards({
               </div>
             </div>
           </CardContent>
+          {index === 2 && (
+            <button
+              className="absolute top-1/3 -right-4 z-10 grid h-16 w-16 place-items-center rounded-full bg-zinc-800 shadow-xl transition-transform hover:scale-105 active:scale-95"
+              aria-label="Open chat"
+            >
+              <div className="relative">
+                <MessageSquare className="h-6 w-6 fill-white text-white" />
+                <MessageSquare className="absolute -right-1.5 -top-1.5 h-5 w-5 fill-white text-white" />
+              </div>
+            </button>
+          )}
         </Card>
       ))}
     </div>
